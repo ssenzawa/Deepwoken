@@ -4,45 +4,49 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float MovementSpeed = 1;
-    public float JumpForce = 1;
+    public float speed;
+    public float jumpForce;
     private float moveInput;
 
-    private Rigidbody2D _rigidbody;
+    private Rigidbody2D rb;
 
     private bool facingRight = true;
 
+    private bool isGrounded;
+    public Transform groundCheck;
+    public float checkRadius;
+    public LayerMask whatIsGround;
+
+
     void Start()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
+
+
+        moveInput = Input.GetAxis("Horizontal");
+        Debug.Log(moveInput);
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+        if(facingRight == false && moveInput > 0)
         {
-            _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-
-            if(facingRight == false && moveInput > 0)
-            {
-                Flip();
-                {
-                    if(facingRight == true && moveInput < 0)
-                    {
-                        Flip();
-                    }
-                }
-            }
+            Flip();
+        }
+        else if(facingRight == true && moveInput < 0)
+        {
+            Flip();
         }
     }
 
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 = Scaler = transform.localScale;
+        Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
