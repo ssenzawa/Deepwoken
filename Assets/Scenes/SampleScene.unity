@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 449436611}
   - component: {fileID: 449436610}
   - component: {fileID: 449436609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 541045209}
   - component: {fileID: 541045208}
   - component: {fileID: 541045207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 678800601}
   - component: {fileID: 678800600}
   - component: {fileID: 678800599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 782107479}
   - component: {fileID: 782107478}
   - component: {fileID: 782107477}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 791800017}
   - component: {fileID: 791800016}
   - component: {fileID: 791800015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,11 +900,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 5
-  groundCheck: {fileID: 0}
-  checkRadius: 0
+  groundCheck: {fileID: 1787386807}
+  checkRadius: 0.5
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &981802129
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 981802132}
   - component: {fileID: 981802131}
   - component: {fileID: 981802130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 996640190}
   - component: {fileID: 996640189}
   - component: {fileID: 996640191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1143,7 +1143,7 @@ GameObject:
   - component: {fileID: 1089481782}
   - component: {fileID: 1089481781}
   - component: {fileID: 1089481780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1266,7 +1266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095543828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.143, y: -0.18, z: 0}
+  m_LocalPosition: {x: 0.089, y: -0.184, z: 0}
   m_LocalScale: {x: 0.37515342, y: 0.120134875, z: 0.8817225}
   m_Children: []
   m_Father: {fileID: 961828522}
@@ -1349,7 +1349,7 @@ Transform:
   m_GameObject: {fileID: 1234047955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.031, y: 0.026, z: 0}
-  m_LocalScale: {x: 0.14073355, y: 0.5318056, z: 0.8817225}
+  m_LocalScale: {x: 0.14249273, y: 0.5318056, z: 0.8817225}
   m_Children: []
   m_Father: {fileID: 961828522}
   m_RootOrder: 0
@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 1501119544}
   - component: {fileID: 1501119543}
   - component: {fileID: 1501119542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501119541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5164417, y: 5.0918407, z: 0}
+  m_LocalPosition: {x: -0.518, y: 5.0918407, z: 0}
   m_LocalScale: {x: 0.032080524, y: 11.166449, z: 1}
   m_Children: []
   m_Father: {fileID: 996640190}
@@ -1538,8 +1538,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787386806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.498, z: 0}
+  m_LocalScale: {x: 0.21, y: 0.18874335, z: 0.21}
   m_Children: []
   m_Father: {fileID: 961828522}
   m_RootOrder: 2
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 1819973664}
   - component: {fileID: 1819973663}
   - component: {fileID: 1819973662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
