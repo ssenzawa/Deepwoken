@@ -55,12 +55,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
+        if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpForce; 
             extraJumps--;
         }
-        else if(Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true) //Gets input from UpArrow key to jump
+        else if(Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true) //Gets input from UpArrow key to jump
         {
             rb.velocity = Vector2.up * jumpForce; //Script for extra jumps, double jumps
         }
@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 Scaler = transform.localScale; //Detects if character is facing right and flips it?
+        Vector3 Scaler = transform.localScale; //Detects if character is facing right and flips it, instead of making my character resize itself every time it flips the sprite
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
