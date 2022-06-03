@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class DamageController : MonoBehaviour
 {
-    [SerializeField] private int playerDamage;
+    [SerializeField] private int playerDamage; //Integer for player damage so the hearts go down
 
-    [SerializeField] private HealthController _healthController;
+    [SerializeField] private HealthController _healthController; //Health Controller for setting the health 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //Collision for the object and a trigger
     {
         if (collision.CompareTag("Player"))
         {
-            Damage();
+            Damage(); //'Damages' the player 
         }
     }
 
-    void Damage()
+    void Damage() //Script for Damage
     {
-        _healthController.playerHealth = _healthController.playerHealth - playerDamage;
-        _healthController.UpdateHealth();
-        gameObject.SetActive(false);
+        _healthController.playerHealth = _healthController.playerHealth - playerDamage; //Sets the player health at -1 hearts from max health (3)
+        _healthController.UpdateHealth(); //Updates health
+        gameObject.SetActive(false); //Makes the gameobject that our player comes into contact with dissapear
     }
 }

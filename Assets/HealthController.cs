@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour
 {
-    public int playerHealth;
+    public int playerHealth; //Integer for player health
 
-    [SerializeField] private Image[] hearts;
+    [SerializeField] private Image[] hearts; //Establishes the image of the hearts displayed
 
     private void Start()
     {
-        UpdateHealth();
+        UpdateHealth(); //Used for updating the player health
     }
 
     public void UpdateHealth()
@@ -20,11 +20,11 @@ public class HealthController : MonoBehaviour
         {
             if  (i < playerHealth)
             {
-                hearts[i].color = Color.red;
+                hearts[i].color = Color.red; //Sets the hearts red 
             }
             else
             {
-                hearts[i].color = Color.black;
+                hearts[i].color = Color.black; //Sets the hearts colour black when the health 'goes down'
             }
         }
     }
