@@ -6,7 +6,7 @@ public class CoinPicker : MonoBehaviour
 {
     private void OntriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Coin"))
         {
             Destroy(gameObject);
         }
