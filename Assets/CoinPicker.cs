@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CoinPicker : MonoBehaviour
 {
-    private void OntriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Coin"))
+
+        if (collision.gameObject.CompareTag("Player"))
         {
+            CoinScore.coinScore += 1;
             Destroy(gameObject);
         }
     }
