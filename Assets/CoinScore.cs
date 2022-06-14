@@ -5,15 +5,14 @@ using UnityEngine.UI;
 public class CoinScore : MonoBehaviour
 {
     Text coin;
-    public static int coinScore;
+    public static int coinScore; //Establishes the int coinScore
     void Start()
     {
-        coin = GetComponent<Text>();
+        coin = GetComponent<Text>(); //Gets our text that our coin uses e.g the score
     }
 
-    // Update is called once per frame
     void Update()
     {
-        coin.text = coinScore.ToString();
+        coin.text = coinScore.ToString(); //Creates a ToString for our coin text and coin score
     }
 }

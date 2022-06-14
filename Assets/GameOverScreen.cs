@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-
+    //Didnt get to finish game over screen.
 }
