@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    public float jumpForce; //All 3 are values for my game, each has its own function e.g speed so you can specifically set the speed, jump height, and moveInput is to detect movement input
+    public float jumpForce; //All 3 are values/variables for my game, each has its own function e.g speed so you can specifically set the speed, jump height, and moveInput is to detect movement input
     private float moveInput;
 
-    private Rigidbody2D rb; //The 2D rigidbody that my character uses
+    private Rigidbody2D rb; //The 2D rigidbody that my character uses for collisions
 
-    private bool facingRight = true;
+    private bool facingRight = true; //Used to detect if char is facing right or not
 
     private bool isGrounded;
     public Transform groundCheck;
