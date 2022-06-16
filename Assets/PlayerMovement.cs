@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        extraJumps = extraJumpsValue;
-        rb = GetComponent<Rigidbody2D>();
+        extraJumps = extraJumpsValue; //Sets the value for extraJumps e.g 2 = 2 extra jumps
+        rb = GetComponent<Rigidbody2D>(); //Gets the RigidBody componet, rb is the value for rigidbody
     }
 
     void FixedUpdate()

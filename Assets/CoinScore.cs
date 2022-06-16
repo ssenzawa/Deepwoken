@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CoinScore : MonoBehaviour
 {
-    Text coin;
+    Text coin; //Text box for storing the score
     public static int coinScore; //Establishes the int coinScore
     void Start()
     {

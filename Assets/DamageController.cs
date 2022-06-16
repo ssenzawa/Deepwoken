@@ -6,13 +6,13 @@ public class DamageController : MonoBehaviour
 {
     [SerializeField] private int playerDamage; //Integer for player damage so the hearts go down
 
-    [SerializeField] private HealthController _healthController; //Health Controller for setting the health 
+    [SerializeField] private HealthController _healthController; //Health Controller for setting the health of the player, their HP 
 
     private void OnTriggerEnter2D(Collider2D collision) //Collision for the object and a trigger
     {
         if (collision.CompareTag("Player"))
         {
-            Damage(); //'Damages' the player 
+            Damage(); //'Damages' the player, used for when the player runs into the enemy
         }
     }
 
